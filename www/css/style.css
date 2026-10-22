@@ -1,0 +1,136 @@
+/* Reset básico e tipografia */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f3f6ed; /* Fundo creme suave / polpa de abacate */
+    color: #2e3d29; /* Texto verde bem escuro */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Cabeçalho topo */
+header.cabeca {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header.cabeca h1, 
+header.cabeca h2 {
+    color: #4b7331; /* Verde abacate */
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Container do Formulário (Login / Cadastro) */
+.cad-log {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 380px;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(75, 115, 49, 0.12);
+    border: 1px solid #d4e3c9;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cad-log h3 {
+    color: #385923;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Campos de entrada (Inputs) */
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #c0d8b1;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fafcf8;
+    color: #2e3d29;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+    border-color: #6a9c49;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(106, 156, 73, 0.2);
+}
+
+/* Botões */
+input[type="button"], 
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6a9c49; /* Verde abacate vibrante */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+input[type="button"]:hover, 
+button:hover {
+    background-color: #537d37;
+}
+
+input[type="button"]:active, 
+button:active {
+    transform: scale(0.98);
+}
+
+/* Menus de Navegação e Links */
+nav.link {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+nav.link a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e2edd9;
+    color: #385923;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+nav.link a:hover {
+    background-color: #6a9c49;
+    color: #ffffff;
+}
+
+/* Rodapé */
+footer.rodape {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding: 15px 0;
+    color: #728c61;
+}
+
+footer.rodape h3 {
+    font-size: 14
